@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>dotnet</name>
+    </assembly>
+    <members>
+        <member name="M:dotnet.Services.BookService.AddBookAsync(dotnet.Contracts.CreateBookRequest)">
+            <summary>
+            Add a new book
+            </summary>
+            <param name="createBookRequest">Book request to be added</param>
+            <returns>Details of the created book</returns>
+        </member>
+        <member name="M:dotnet.Services.BookService.GetBookByIdAsync(System.Guid)">
+            <summary>
+            Get a book by its ID
+            </summary>
+            <param name="id">ID of the book</param>
+            <returns>Details of the book</returns>
+        </member>
+        <member name="M:dotnet.Services.BookService.GetBooksAsync">
+            <summary>
+            Get all books
+            </summary>
+            <returns>List of all books</returns>
+        </member>
+        <member name="M:dotnet.Services.BookService.UpdateBookAsync(System.Guid,dotnet.Contracts.UpdateBookRequest)">
+            <summary>
+            Update an existing book
+            </summary>
+            <param name="id">ID of the book to be updated</param>
+            <param name="book">Updated book model</param>
+            <returns>Details of the updated book</returns>
+        </member>
+        <member name="M:dotnet.Services.BookService.DeleteBookAsync(System.Guid)">
+            <summary>
+            Delete a book by its ID
+            </summary>
+            <param name="id">ID of the book to be deleted</param>
+            <returns>True if the book was deleted, false otherwise</returns>
+        </member>
+    </members>
+</doc>
