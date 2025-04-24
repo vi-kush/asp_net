@@ -38,10 +38,6 @@ builder.Services.AddSwaggerGen(options =>
     options.IncludeXmlComments(xmlPath);
 });
 
-builder.Services.AddScoped<IBookService, BookService>();
-builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
-
-builder.Services.AddProblemDetails();
 
 var app = builder.Build();
 
@@ -86,8 +82,7 @@ app.MapGet("/booksItem", () =>{
             Author = "Juval Lowy and Michael Montgomery"
         }
     });
-})
-  .WithName("Get Book")
+}).WithName("Get Book")
   .WithOpenApi();
 
 app.MapGroup("/api/v1/")

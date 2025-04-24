@@ -169,3 +169,4 @@ D:\dotnet\obj\Debug\net8.0\dotnet.xml
 D:\dotnet\obj\Debug\net8.0\dotnet.pdb
 D:\dotnet\obj\Debug\net8.0\dotnet.genruntimeconfig.cache
 D:\dotnet\obj\Debug\net8.0\ref\dotnet.dll
+D:\dotnet\obj\Debug\net8.0\dotnet.sourcelink.json

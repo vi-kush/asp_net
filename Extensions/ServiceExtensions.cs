@@ -1,5 +1,8 @@
 using System.Reflection;
 using dotnet.AppContext;
+using dotnet.Exceptions;
+using dotnet.Services;
+using dotnet.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace dotnet.Extensions
@@ -16,6 +19,11 @@ namespace dotnet.Extensions
             {
                 configure.UseSqlServer(builder.Configuration.GetConnectionString("sqlConnection"));
             });
+
+            builder.Services.AddScoped<IBookService, BookService>();
+            builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+
+            builder.Services.AddProblemDetails();
 
         }
     }
