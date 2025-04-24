@@ -1,11 +1,3 @@
-Models
-AppContext
-appsetting.json
-Contracts
-Iterfaces
-Services
-Extensions
-Exceptions
-EndPoints
-Program.cs
-dotnet.csproj
+C# 
+
+Minimal Api Implementation
